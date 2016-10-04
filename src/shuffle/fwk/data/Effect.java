@@ -3521,7 +3521,7 @@ public enum Effect {
     * Erases all pookemon in a V shapped pattern, same rules as other megas for scoring. Pattern is
     * simulataneous.
     */
-   {
+   GLALIE {
       
       @Override
       public boolean isPersistent() {
