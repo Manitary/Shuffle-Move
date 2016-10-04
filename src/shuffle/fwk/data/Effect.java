@@ -3521,7 +3521,7 @@ public enum Effect {
     * Erases all pookemon in a V shapped pattern, same rules as other megas for scoring. Pattern is
     * simulataneous.
     */
-   GLALIE {
+   {
       
       @Override
       public boolean isPersistent() {
@@ -4383,6 +4383,16 @@ public enum Effect {
     * Erases Pokemon and disruptions in a 3x3 square around a single spot you tap.
     */
    BEEDRILL {
+      @Override
+      public boolean isPersistent() {
+         return true;
+      }
+
+   },
+   /**
+    * Erases pokemon in a < shape (a rotated version of M-Glalie V-shape)
+    */
+   PIDGEOT {
       @Override
       public boolean isPersistent() {
          return true;
